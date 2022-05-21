@@ -1,36 +1,5 @@
-$left-color: #FFE59D;
-$right-color: #B3E8E5;
-
-@mixin reset {
-    margin: 0;
-    padding: 0;
-}
-
-@mixin color-and-text($bg-color, $txt-color) {
-    width: 50%;
-    background-color: $bg-color;
-    .text{
-        margin-top: 40%;
-        text-align: center;
-        font-size: 150px;
-        color: $txt-color;
-    }
-}
-
-body{
-    @include reset();
-    font-family: 'Roboto', sans-serif;
-}
-
-.container{
-    height: 100vh;
-    display: flex;
-    
-    .left{
-      @include color-and-text($left-color, $right-color);
-    }
-
-    .right{
-        @include color-and-text($right-color, $left-color);
-    }
-}
+@import './abstract/base';
+@import './components/navbar';
+@import './components/banner';
+@import './components/services';
+@import './components/coupon'

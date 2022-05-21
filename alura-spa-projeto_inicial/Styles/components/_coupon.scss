@@ -1,0 +1,30 @@
+@import '../abstract/vars';
+
+#coupon{
+    background-color: $tertiary-color;
+    padding: 4rem;
+    text-align: center;
+    .text{
+        color: $primary-color;
+        h2{
+            margin: 2rem;
+            font-size: $size-text / 1.7;
+        }
+    }
+    .input{
+        margin: 0 auto;
+        width: 575px;
+        border-radius: 20px;
+        border: 4px solid white;
+        background: white;
+        input{
+            border-radius: 20px;
+            height: 40px;
+            border: none;
+            width: 540px;
+            outline: none;
+            text-align: center;
+            font-size: 26px;
+        }
+    }
+}
