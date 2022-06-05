@@ -1,0 +1,15 @@
+import Styles/abstract/_vars.scss
+
+@mixin bg-colors($colors...)
+    background: linear-gradient(to left, $colors)
+
+
+footer
+    text-align: center
+    font-size: $size-text / 2
+    border-top: 2px solid $primary-color
+    margin-top 1rem
+    padding: 1.2rem
+    @include bg-colors($primary-color, $secondary-color, $tertiary-color, $alter-color)
+    i
+        color: red
